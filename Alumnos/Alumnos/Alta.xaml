@@ -1,0 +1,45 @@
+﻿<Window x:Class="Alumnos.Alta"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Alumnos"
+        mc:Ignorable="d"
+        Title="Alta" Height="360" Width="550
+        " Loaded="Window_Loaded">
+    <Grid>
+        <Label x:Name="txClaveUnica1141" Content="clave única" HorizontalAlignment="Left" Margin="43,50,0,0" VerticalAlignment="Top"/>
+
+        <Label x:Name="txNombre11" Content="nombre" HorizontalAlignment="Left" Margin="43,96,0,0" VerticalAlignment="Top"/>
+
+        <Label x:Name="txSexo11" Content="sexo" HorizontalAlignment="Left" Margin="43,146,0,0" VerticalAlignment="Top"/>
+
+        <Label x:Name="txCorreo11" Content="correo" HorizontalAlignment="Left" Margin="43,191,0,0" VerticalAlignment="Top"/>
+
+        <Label x:Name="txSemestre11" Content="semestre" HorizontalAlignment="Left" Margin="43,222,0,0" VerticalAlignment="Top"/>
+
+        <Label x:Name="cbProgramas11" Content="programa" HorizontalAlignment="Left" Margin="43,266,0,0" VerticalAlignment="Top"/>
+
+        <TextBox x:Name="txClaveUnica" HorizontalAlignment="Left" Height="23" Margin="132,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TxClaveUnica_TextChanged"/>
+
+        <TextBox x:Name="txNombre" HorizontalAlignment="Left" Height="23" Margin="132,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+        <TextBox x:Name="txSexo" HorizontalAlignment="Left" Height="23" Margin="132,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+        <TextBox x:Name="txCorreo" HorizontalAlignment="Left" Height="23" Margin="132,191,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+        <TextBox x:Name="txSemestre" HorizontalAlignment="Left" Height="23" Margin="132,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+        <ComboBox x:Name="cbProgramas" HorizontalAlignment="Left" Margin="132,266,0,0" VerticalAlignment="Top" Width="120"/>
+
+        <Button x:Name="btAgregar" Content="Agregar" HorizontalAlignment="Left" Margin="356,50,0,0" VerticalAlignment="Top" Width="75" Click="BtAgregar_Click" />
+
+        <Button x:Name="btEliminar" Content="Eliminar" HorizontalAlignment="Left" Margin="356,100,0,0" VerticalAlignment="Top" Width="75" Click="BtEliminar_Click" />
+
+        <Button x:Name="btSalir" Content="Salir" HorizontalAlignment="Left" Height="23" Margin="404,287,0,0" VerticalAlignment="Top" Width="75" Click="BtSalir_Click"/>
+
+        <Button x:Name="btModificar" Content="Modificar" HorizontalAlignment="Left" Margin="356,191,0,0" VerticalAlignment="Top" Width="75" Click="BtModificar_Click"/>
+
+        <Button Content="Buscar" HorizontalAlignment="Left" Margin="356,150,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+    </Grid>
+</Window>

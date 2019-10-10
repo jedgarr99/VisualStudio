@@ -1,0 +1,1 @@
+Data Source=CC102-16\SA;Initial Catalog=baseSistemaAlumno;Persist Security Info=True;User ID=sa;Password=adminadmin

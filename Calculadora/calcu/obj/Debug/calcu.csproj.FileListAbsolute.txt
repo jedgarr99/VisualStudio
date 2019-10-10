@@ -1,0 +1,15 @@
+C:\Users\JRODRIGUORT\source\repos\calcu\calcu\bin\Debug\calcu.exe.config
+C:\Users\JRODRIGUORT\source\repos\calcu\calcu\bin\Debug\calcu.exe
+C:\Users\JRODRIGUORT\source\repos\calcu\calcu\bin\Debug\calcu.pdb
+C:\Users\JRODRIGUORT\source\repos\calcu\calcu\obj\Debug\calcu.csprojAssemblyReference.cache
+C:\Users\JRODRIGUORT\source\repos\calcu\calcu\obj\Debug\MainWindow.g.cs
+C:\Users\JRODRIGUORT\source\repos\calcu\calcu\obj\Debug\App.g.cs
+C:\Users\JRODRIGUORT\source\repos\calcu\calcu\obj\Debug\calcu_MarkupCompile.cache
+C:\Users\JRODRIGUORT\source\repos\calcu\calcu\obj\Debug\calcu_MarkupCompile.lref
+C:\Users\JRODRIGUORT\source\repos\calcu\calcu\obj\Debug\MainWindow.baml
+C:\Users\JRODRIGUORT\source\repos\calcu\calcu\obj\Debug\calcu.g.resources
+C:\Users\JRODRIGUORT\source\repos\calcu\calcu\obj\Debug\calcu.Properties.Resources.resources
+C:\Users\JRODRIGUORT\source\repos\calcu\calcu\obj\Debug\calcu.csproj.GenerateResource.cache
+C:\Users\JRODRIGUORT\source\repos\calcu\calcu\obj\Debug\calcu.csproj.CoreCompileInputs.cache
+C:\Users\JRODRIGUORT\source\repos\calcu\calcu\obj\Debug\calcu.exe
+C:\Users\JRODRIGUORT\source\repos\calcu\calcu\obj\Debug\calcu.pdb
