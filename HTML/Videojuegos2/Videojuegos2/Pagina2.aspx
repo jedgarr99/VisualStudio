@@ -26,7 +26,7 @@
         <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="ir a la pagina 3" />
         <br />
         <br />
-        <asp:Label ID="Label1" runat="server"></asp:Label>
+        <asp:Label ID="lbContador" runat="server"></asp:Label>
         <br />
 
 

@@ -35,7 +35,24 @@ namespace Videojuegos2
 
         protected void btPagina2_Click(object sender, EventArgs e)
         {
+            OdbcConnection miConexion = conectarBD();
+            
 
+            if (miConexion != null)
+            {
+                String query = " select claveU from usuario where email = '" + txUsuario.Text + "'and password = '" + txContraseña.Text + "'";
+                OdbcCommand cmd = new OdbcCommand(query, miConexion);
+                OdbcDataReader rd = cmd.ExecuteReader();
+                if (rd.HasRows)
+                {
+                    rd.Read();
+                    Session["claveUnica"] = rd.GetInt32(0).ToString();
+                    Response.Redirect("Pagina2.aspx");
+                }
+                else
+                    lbContador.Text = " el usuario o contraseña son incorrectos";
+                rd.Close();
+            }
         }
     }
 }
