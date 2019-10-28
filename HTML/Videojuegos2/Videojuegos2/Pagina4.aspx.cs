@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Windows;
 
 namespace Videojuegos2
 {
@@ -12,7 +13,7 @@ namespace Videojuegos2
     {
         protected OdbcConnection conectarBD()
         {
-            String stringConexion = "Driver={SQL Server Native Client 11.0};Server=CC102-16\\SA;Uid=sa;Pwd=adminadmin;Database=GameSpot";
+            String stringConexion = "Driver={SQL Server Native Client 11.0};Server=112SALAS10;Uid=sa;Pwd=sqladmin;Database=GameSpot";
             try
             {
                 OdbcConnection conexion = new OdbcConnection(stringConexion);
@@ -49,7 +50,7 @@ namespace Videojuegos2
                 
 
         }
-
+        // llenar GridView
         protected void ddJuegos_SelectedIndexChanged(object sender, EventArgs e)
         {
             OdbcConnection miConexion = conectarBD();
@@ -62,16 +63,18 @@ namespace Videojuegos2
                 OdbcDataReader rd = cmd.ExecuteReader();
                 rd.Read();
                 int claveJuego = rd.GetInt16(0);
+                MessageBox.Show(claveJuego.ToString());
 
                 String query2 = String.Format("select nombre, resumen, consola, fechaLanzamiento from juegos where claveJ ={0}", claveJuego);
                 OdbcCommand cmd2 = new OdbcCommand(query2, miConexion);
                 OdbcDataReader rd2 = cmd2.ExecuteReader();
-                rd2.Read();
+               
                 gvJuegos.DataSource = rd2;
                 gvJuegos.DataBind();
                 rd.Close();
                 rd2.Close();
             }
+
         }
     }
 }

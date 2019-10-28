@@ -12,7 +12,7 @@ namespace Videojuegos2
     {
         protected OdbcConnection conectarBD()
         {
-            String stringConexion = "Driver={SQL Server Native Client 11.0};Server=CC102-16\\SA;Uid=sa;Pwd=adminadmin;Database=GameSpot";
+            String stringConexion = "Driver={SQL Server Native Client 11.0};Server=112SALAS10;Uid=sa;Pwd=sqladmin;Database=GameSpot";
             try
             {
                 OdbcConnection conexion = new OdbcConnection(stringConexion);
@@ -26,10 +26,10 @@ namespace Videojuegos2
                 return null;
             }
         }
+        //LLena DropDownList en el Page_Load - AutoPostBack True
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
-            {
+            if (!IsPostBack) {
                 OdbcConnection miConexion = conectarBD();
 
 
@@ -53,7 +53,7 @@ namespace Videojuegos2
         {
             Response.Redirect("Pagina4.aspx");
         }
-
+        //cambiar label con querys 
         protected void ddJuegos_SelectedIndexChanged(object sender, EventArgs e)
         {
             OdbcConnection miConexion = conectarBD();

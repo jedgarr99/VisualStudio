@@ -12,7 +12,7 @@ namespace Videojuegos2
     {
         protected OdbcConnection conectarBD()
         {
-            String stringConexion = "Driver={SQL Server Native Client 11.0};Server=CC102-16\\SA;Uid=sa;Pwd=adminadmin;Database=GameSpot";
+            String stringConexion = "Driver={SQL Server Native Client 11.0};Server=112SALAS10;Uid=sa;Pwd=sqladmin;Database=GameSpot";
             try
             {
                 OdbcConnection conexion = new OdbcConnection(stringConexion);
@@ -33,6 +33,7 @@ namespace Videojuegos2
 
         }
 
+        //Boton para checar contraseña y mandar a la siguiente pagina
         protected void btPagina2_Click(object sender, EventArgs e)
         {
             OdbcConnection miConexion = conectarBD();
@@ -46,8 +47,8 @@ namespace Videojuegos2
                 if (rd.HasRows)
                 {
                     rd.Read();
-                    Session["claveUnica"] = rd.GetInt32(0).ToString();
-                    Response.Redirect("Pagina2.aspx");
+                    Session["claveUnica"] = rd.GetInt32(0).ToString(); //se guarda para otras paginas
+                    Response.Redirect("Pagina2.aspx");  //Manda a otra pagina
                 }
                 else
                     lbContador.Text = " el usuario o contraseña son incorrectos";
