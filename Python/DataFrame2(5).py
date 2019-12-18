@@ -159,6 +159,17 @@ pd.merge(df1, df2, on ='key', how = 'outer')
 pd.concat([df1,df2]).drop_duplicates()
 
 
+datos=pd.read_csv("titulos.csv")
+datos.head()
+datos.info()
+datos[datos['title']=='Batman']
+datos.sort_values(by=['year']).head(2)
+datos.sort_values(by=['year'])[datos['title'].str.contains("Exorcist")]
+mask=(datos['year']>=1950) & (datos['year']<=1959)
+datos[(datos['year'] >=1950) & (datos['year'] <=1959)]
+print(mask)
+datos.groupby('year').count()
+
 
 
 
